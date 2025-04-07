@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de GEOPESCA">
+    <title>Geopesca</title>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!--ESTILOS DE LEAFLET-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    
+    <!--ESTILOS DEL GOBIERNO DE MEXICO-->
+    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v4/image/favicon.ico" rel="shortcut icon">
+
+    <!--PLUGINS ESTILOS DE LEAFLET-->
+    <link rel="stylesheet" href="lib/plugins/L.Control.MousePosition.css" type="text/css">
+
+    <!--ESTILOS PROPIOS-->
+    <link rel="stylesheet" href="css/styles_map_main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+              <span class="sr-only">Interruptor de Navegación</span>
+            </button>
+            <a class="navbar-brand" href="https://www.gob.mx/imipas" target="_blank">IMIPAS</a>
+          </div>
+          <div class="collapse navbar-collapse" id="subenlaces">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Inicio</a>
+              </li>
+              <li><a href="https://www.gob.mx/imipas/acciones-y-programas/buque-de-investigacion-dr-jorge-carranza-fraser-362964" target="_blank">Informes y publicaciones</a>
+              </li>
+              <li>
+                <a href="cnp/map_cnp_dof.html">CNP</a>
+              </li>
+              <li>
+                <a href="boletines.html">Boletines</a>
+              </li>
+              <li><a href="https://sites.google.com/inapesca.gob.mx/vinculacion/siga" target="_blank">SIGA</a>
+              </li>
+              <li><a href="https://www.gob.mx/imipas#4436" target="_blank">Contacto</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container">
+    <div class="bienvenida_geopesca">
+        <h2>Bienvenidos a GEOPESCA <img class="figura-agricultura-inapesca-geopesca" src="fig/agricultura_inapesca.png" alt="Logotipo del sesenta aniversario del INAPESCA"></h2>
+        <p> Los datos que componen GEOPESCA se encuentran organizados de acuerdo con las Ecorregiones Marinas de Nivel I. Para visualizar los datos que contiene el portal, hacer clic en la región de interés y es direccionado al catálogo de la información disponible en esa región. Por ahora se encuentra información referente al Pacífico mexicano, pero se está trabajando para incluir otras regiones. </p>
+
+    </div>
+    
+    <div id="mapa_principal_nav"></div>
+
+    <div class="description-geoportal">
+        <h3>Descripción de las capas</h3>
+        <ul>
+            <li>La densidad de energía acústica (NASC), es obtenida mediante un ecosonda Simrad EK60 y procesada con técnicas de vanguardia empleando las frecuencias de sonido con las que cuenta el equipo.</li>
+            <li>La Ruta (GPS), corresponde a la trayectoria seguida por el buque durante los cruceros de investigación.</li>
+            <li>Las capas ráster de temperatura, salinidad y clorofila-a provienen de un sistema que genera información de estas variables cada minuto, conocido como termosalinómetro </li>
+            <li>Las capas de lances y estaciones corresponden a sitios de muestreo biológico de especies de interés pesquero y oceanográficos respectivamente </li>
+        </ul>
+
+        <h3>Navegación por los proyectos en este geoportal</h3>
+        <p>Al hacer clic en el botón de capas ( <img src="fig/layers.png" class="img-layer"></img> ) se despliega la leyenda (simbología) de la información que contiene cada región. Las regiones incluyen los cruceros que el buque Dr. Jorge Carranza ha desarrollado en dicha zona. Los cruceros están ordenados de manera ascendente (de los más antiguos a los más recientes en la parte de abajo). Al hacer clic en el recuadro ubicado a la izquierda de cada capa, se activa o desactiva la visualización de esa información. La escala de las imágenes de variables fisicoquímicas, se encuentran en la parte inferior del mapa. </p>
+
+        <h3>Glosario </h3>
+        <p> <b>Oxígeno disuelto</b>: El oxígeno disuelto en el agua es vital para la existencia de la mayoría de los organismos acuáticos. El oxígeno es un componente clave en la respiración celular tanto para la vida acuática como para la vida terrestre.</p>
+        <p><b>Temperatura superficial del mar</b>: Es el contenido de calor que la superficie del mar absorbe de la radiación solar.</p>
+
+        <p><b>Clorofila a </b>: Pigmento de color verde que se encuentran en organismos microscópicos. La clorofila es una biomolécula fundamental en la fotosíntesis para almacenar energía a partir de la luz solar.</p>
+
+        <p><b>Salinidad</b>: Es la cantidad de sales minerales disueltas en el agua de mar, medida a partir de la conductividad de los iones disueltos en dichas sales minerales.</p>
+
+        <p><b>GPS</b>: Sistema de Posicionamiento Global, servicio que permite posicionar de manera precisa a un fenómeno u objeto en la superficie terrestre mediante un sistema de coordenadas.</p>
+
+        <p><b>Lance de pesca</b>: Operación realizada con redes de arrastre para capturar especies de interés. Dependiendo del arte de pesca a operar, los arrastres de pesca se dividen en dos tipos: de fondo y pelágicos (media agua). La primera ocurre en el lecho marino mientras que la segunda se desarrolla en la columna de agua.</p>
+
+        <p><b>CTD</b>: Perfilador de conductividad temperatura y profundidad para la medición de parámetros fisicoquímicos en la columna de agua.</p>
+
+        <p><b>Red Bongo</b>: Está compuesta por dos aros de aluminio unidos entre si con redes cónicas para realizar arrastres oblicuos y capturar microorganismos en la columna de agua.</p>
+
+        <p><b>Estación oceanográfica</b>: Sitio donde se realizan mediciones de variables físico químicas (mediante el lanzamiento de sonda CTD), recolección de agua de mar a diferentes profundidades (botellas y roseta) y colecta de microorganismos marinos (arrastres oblicuos de redes bongo).</p>
+
+        <p><b>Ecosonda</b>: Instrumento acústico que utiliza el sonido reflejado (eco) que sirve para detectar la profundidad del mar, organismos u objetos en la columna del agua.</p>
+        <p><b>Sv</b>: Es la suma de los valores de la intensidad de los ecos (reflexión) por unidad de volumen y se mide en logaritmos (dB).</p>
+
+        <p><b>NASC o s<sub>A</sub> (m<sup>2.</sup>mn<sup>-2</sup>)</b>: Es la suma de los valores de Sv en un determinado intervalo de la profundidad en la columna de agua, estandarizado en unidades de área (la más común millas náuticas). </p>
+
+        <p><b>Siglas de crucero</b>: Las siglas <b>JCFINPAAMM</b>, significan Jorge Carranza Fraser, Instituto Nacional de la Pesca. Donde <b>AA</b> hace referencia a los dos últimos dígitos del año y <b>MM</b> al mes en que se realizó el crucero, por ejemplo, JCFINP2103, que indica que el crucero fue realizado en marzo del 2021.</p>
+
+        <p>Para más detalles de la terminología de acústica pesquera se recomienda revisar: Simmonds, J. & D. N. MacLennan. 2005. <i>Fisheries acoustics: theory and practice</i> . Blackwell Science Ltd. Reino Unido. 437 p.</p>
+        
+        <h3>Dudas o comentarios </h3>
+        <p>En caso de tener dudas o comentarios al respecto de este geoportal, o interés particular por información, por favor hacer clic en la pestaña de Contacto donde atenderemos todas tus preguntas.</p>
+
+        <h3>Como citar</h3>
+        <p>En caso de emplear la información contenida en este geoportal, es necesario citar como se muestra en el siguiente ejemplo: </p>
+        <p><b>IMIPAS</b>. 2022. Mapa de temperatura superficial del mar, crucero JCFINP/1906. Geoportal del IMIPAS – GEOPESCA. Instituto Mexicano de Investigación en Pesca y Acuacultura Sustentables, Secretaría de Agricultura y Desarrollo Rural. Consultado el 15 de abril del 2022. https://www.gob.mx/inapesca/geopesca </p>
+        <p>Nota: la clave de crucero se podrá encontrar en las capas de lances y estaciones oceanográficas de los cruceros consultados.</p>
+            
+
+    </div>
+
+</div>
+
+    <!--CARGAR LEAFLET-->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <!--CARGAR PLUGIN PARA LEAFLET-->
+    <script src="lib/plugins/leaflet.ajax.min.js"></script>
+    <script src="lib/plugins/leaflet-providers.js"></script>
+    <script src="lib/plugins/L.Control.MousePosition.js"></script>
+
+    
+    <script src="./js/mapa_principal.js"></script>
+
+    <!--JS DEL GOBIERNO DE MEXICO-->
+    <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+</body>
+</html>
