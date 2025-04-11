@@ -67,7 +67,7 @@ select {
 }
 .paleta {
     position:relative;
-    bottom: -95%;
+    bottom: -94%;
     left: 20%;
     height: auto;
     width: 200px;
@@ -117,6 +117,15 @@ select {
     width: 300px;
     z-index: 800;
     }
+    .paleta {
+        position:relative;
+    bottom: -90%;
+    left: 20%;
+    height: auto;
+    width: 100px;
+    z-index: 800;
+    }
+
 
 }
 
@@ -124,6 +133,9 @@ select {
     .paletas {
        display: none;
     }
+    .paleta {
+        display: none;
+     }
 
 }
 
