@@ -186,40 +186,7 @@ fetch("./layers/area_prohibicion_redes_enmalle.geojson")
     zonasPVM.addTo(map); 
   });
 
-  fetch("./layers/area_tolerancia_cero.geojson")
-  .then(res => res.json())
-  .then(data => {
-    zonasATC = L.geoJSON(data, {
-      style: feature => {
-        const zona = feature.properties.Poligono;
-        return {
-          color: colorZonasATC[zona] || '#000',
-          weight: 2,
-          fillOpacity: 0.9
-        };
-      },
-      onEachFeature: (feature, layer) => {
-        const zona = feature.properties;
-        layer.bindPopup(`
-          <table class = "table-layer">
-                <thead>
-                <tr>
-                    <th> <b> IDENTIFICADOR </b> </th>
-                    <th> <b> CLAVE </b></th>
-                </tr>
-          </thead>
-          <tr>
-          <th>Polígono:</th> <td> ${feature.properties.Poligono}</td>
-          </tr>
-          <tr>
-          <th>Zona:</th> <td> ${feature.properties.Zona}</td>
-          </tr>
-          </table>
-          `);
-      }
-    });
-    zonasATC.addTo(map); 
-  });
+ 
 
   // Cargar poligonos
   fetch('./layers/poligonos.geojson') 
@@ -299,6 +266,41 @@ function mostrarPoligonos(features) {
     map.fitBounds(group.getBounds());
   }
 }
+
+fetch("./layers/area_tolerancia_cero.geojson")
+.then(res => res.json())
+.then(data => {
+  zonasATC = L.geoJSON(data, {
+    style: feature => {
+      const zona = feature.properties.Poligono;
+      return {
+        color: colorZonasATC[zona] || '#000',
+        weight: 2,
+        fillOpacity: 0.9
+      };
+    },
+    onEachFeature: (feature, layer) => {
+      const zona = feature.properties;
+      layer.bindPopup(`
+        <table class = "table-layer">
+              <thead>
+              <tr>
+                  <th> <b> IDENTIFICADOR </b> </th>
+                  <th> <b> CLAVE </b></th>
+              </tr>
+        </thead>
+        <tr>
+        <th>Polígono:</th> <td> ${feature.properties.Poligono}</td>
+        </tr>
+        <tr>
+        <th>Zona:</th> <td> ${feature.properties.Zona}</td>
+        </tr>
+        </table>
+        `);
+    }
+  });
+  zonasATC.addTo(map); 
+});
 
 var bounds_group = new L.featureGroup([]);
         function setBounds() {
