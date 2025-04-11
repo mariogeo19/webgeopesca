@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alto Golfo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+   <!--PLUGINS ESTILOS DE LEAFLET-->
+   <link rel="stylesheet" href="../lib/plugins/L.Control.MousePosition.css" type="text/css">
+   <link rel="stylesheet" href="../lib/plugins/Control.MiniMap.min.css" type="text/css">
+
+   <!--ESTILOS DEL GOBIERNO-->
+   <link href="https://framework-gb.cdn.gob.mx/gm/v4/image/favicon.ico" rel="shortcut icon">
+  <!--ESTILOS PROPIO-->
+  <link rel="stylesheet" href="../css/styles_map_qgis.css" type="text/css">
+  <style>
+  .legend {
+    background: white;
+    padding: 10px;
+    line-height: 18px;
+    color: #333;
+    font-size: 14px;
+  }
+  .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.8;
+  }
+</style>
+</head>
+
+<body>
+  <div class="navegacion">
+    <a href="https://www.gob.mx/agricultura" target="_blank"><img class="logo-agricultura" src="../fig/agricultura2.png" alt=" Logotipo de Agricultura"></a> 
+     <ul>
+        <li><a href="../geopesca.html">Geoportal del IMIPAS-GEOPESCA </a></li>
+        <li><a href="../index.html"> B/I Dr. Jorge Carranza Fraser </a></li>
+     </ul>
+    <a href="https://www.gob.mx/imipas" target="_blank"><img class="logo-inapesca" src="../fig/inapesca2.png" alt=" Logotipo de Inapesca"></a> 
+ </div>
+
+  <div id="filtro">
+    <label for="recursoSelect">Selecciona el polígono: </label>
+    <select id="recursoSelect">
+      <option value="">Selecciona</option>
+    </select>
+  </div>
+
+  <div id="map">
+    <img class="paleta" src="../fig/paleta_batimetria_ag.svg" alt="Paletas de colores de la batimetría del Alto Golfo">
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/georaster"></script>
+  <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
+  <script src="map_altogolfo.js"></script>
+  <!--PLUGINS DE LEAFLET-->
+  <script src="../lib/plugins/Control.MiniMap.min.js"></script>
+  <script src="../lib/plugins/L.Control.MousePosition.js"></script>
+  <script src="../lib/plugins/leaflet.nauticscale.js"></script>
+  
+  <!--SCRIPT PROPIO-->
+  <script src="../js/minimap_load.js"></script>
+  <script src="../js/leaflet_load_pluging_qgis.js"></script>
+</body>
+</html>

@@ -65,6 +65,14 @@ select {
     width: 400px;
     z-index: 800;
 }
+.paleta {
+    position:relative;
+    bottom: -95%;
+    left: 20%;
+    height: auto;
+    width: 200px;
+    z-index: 800;
+}
 
 /*Estilos de las tablas*/
 .table-layer {
