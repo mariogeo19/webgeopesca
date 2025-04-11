@@ -300,6 +300,7 @@ fetch("./layers/area_tolerancia_cero.geojson")
     }
   });
   zonasATC.addTo(map); 
+  zonasATC.bringToFront();
 });
 
 var bounds_group = new L.featureGroup([]);
