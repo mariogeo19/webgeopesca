@@ -47,11 +47,11 @@
 const legend = L.control({ position: 'bottomright' });
 legend.onAdd = function () {
   const div = L.DomUtil.create('div', 'legend');
-  div.innerHTML = '<strong>Polígonos </strong><br>';
-  for (const pol in colorMap) {
-    const color = colorMap[pol];
-    div.innerHTML += `<i style="background:${color}"></i>${pol}<br>`;
-  }
+  div.innerHTML = '<strong>Leyenda </strong><br>';
+  //for (const pol in colorMap) {
+   // const color = colorMap[pol];
+   // div.innerHTML += `<i style="background:${color}"></i>${pol}<br>`;
+ // }
 
   //div.innerHTML += '<hr><strong>Zona de crianza de elasmobranquios</strong><br>';
   for (const tipo in colorPuntos) {
@@ -195,7 +195,7 @@ fetch("./layers/area_prohibicion_redes_enmalle.geojson")
         return {
           color: colorZonasATC[zona] || '#000',
           weight: 2,
-          fillOpacity: 0.5
+          fillOpacity: 0.9
         };
       },
       onEachFeature: (feature, layer) => {
@@ -263,7 +263,7 @@ function mostrarPoligonos(features) {
         return {
           color: colorMap[Poligono] || '#000',
           weight: 2,
-          fillOpacity: 0.7
+          fillOpacity: 0.8
         };
       },
     onEachFeature: (feature, layer) => {
