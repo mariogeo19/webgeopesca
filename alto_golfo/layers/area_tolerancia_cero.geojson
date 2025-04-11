@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "area_tolerancia_cero",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Poligono": "Área de Tolerancia cero", "Zona": "AGC" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -114.7409, 31.22277 ], [ -114.56131, 31.09097 ], [ -114.59526, 31.00626 ], [ -114.77486, 31.13805 ], [ -114.7409, 31.22277 ] ] ] } }
+]
+}

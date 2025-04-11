@@ -8,20 +8,30 @@
 
   let geojsonLayer;
   let allFeatures = [];
+  let zonasAPRE;
+  let zonasATC;
+  let zonasPVM;
 
   const colorPuntos = {
-    "": "#377eb8",
+    "Zona de crianza de elasmobranquios": "#377eb8",
   };
 
   const colorMap = {
-    "Área de prohibición de redes de enmalle": "#ffff00",
-    "Área de Tolerancia cero": "#ff0000",
     "Camaron": "#fdc086",
     "Chano": "#beaed4",
     "Curvina": "#ffff99",
     "Langosta": "#984ea3",
-    "Sierra": "#f0027f",
-    "Protección vaquita marina": "#00fa0c"
+    "Sierra": "#f0027f"
+  };
+
+  const colorZonasAPRE = {
+  "Área de prohibición de redes de enmalle": "#ffff00"
+  };
+  const colorZonasATC = {
+  "Área de Tolerancia cero": "#ff0000"
+  };
+  const colorZonasPVM = {
+  "Protección vaquita marina": "#00fa0c"
   };
   
   function get_link_cita(feauture) {
@@ -30,7 +40,6 @@
     if(feauture === "Curvina") return '<a href = "https://datamares.org/stories/comparando-actividades-pesqueras-de-dos-comunidades-en-el-alto-golfo-de-california/?lang=es" target="_blank"> <b> Ver </b>  <i class="fas fa-angle-double-right"></i></a>';
     if(feauture === "Langosta") return '<a href = "https://www.gob.mx/cms/uploads/attachment/file/892410/CNP_2023.pdf" target="_blank"> <b> Ver </b>  <i class="fas fa-angle-double-right"></i></a>';
     if(feauture === "Sierra") return '<a href = "https://revistas.uas.edu.mx/index.php/CIMAR" target="_blank"> <b> Ver </b>  <i class="fas fa-angle-double-right"></i></a>';
-    if(feauture === "Protección vaquita marina") return '<a href = "DOF_CNP/PEZ_ESPADA.pdf" target="_blank"> <b> Ver  </b>  <i class="fas fa-angle-double-right"></i></a>';
     return "";
 }
 
@@ -44,9 +53,20 @@ legend.onAdd = function () {
     div.innerHTML += `<i style="background:${color}"></i>${pol}<br>`;
   }
 
-  div.innerHTML += '<hr><strong>Elasmobranquios</strong><br>';
+  //div.innerHTML += '<hr><strong>Zona de crianza de elasmobranquios</strong><br>';
   for (const tipo in colorPuntos) {
     div.innerHTML += `<i style="background:${colorPuntos[tipo]}"></i>${tipo}<br>`;
+  }
+
+  //div.innerHTML += '<hr><strong></strong><br>';
+  for (const zona in colorZonasAPRE) {
+    div.innerHTML += `<i style="background:${colorZonasAPRE[zona]}"></i>${zona}<br>`;
+  }
+  for (const zona in colorZonasATC) {
+    div.innerHTML += `<i style="background:${colorZonasATC[zona]}"></i>${zona}<br>`;
+  }
+  for (const zona in colorZonasPVM) {
+    div.innerHTML += `<i style="background:${colorZonasPVM[zona]}"></i>${zona}<br>`;
   }
   return div;
 };
@@ -92,11 +112,114 @@ fetch("./layers/crianza_tiburon.geojson")
           `);
         }
       }).addTo(map);
-
-      // Zoom a los puntos (opcional)
-      // map.fitBounds(puntosLayer.getBounds());
     });
 
+fetch("./layers/area_prohibicion_redes_enmalle.geojson")
+  .then(res => res.json())
+  .then(data => {
+    zonasAPRE = L.geoJSON(data, {
+      style: feature => {
+        const zona = feature.properties.Poligono;
+        return {
+          color: colorZonasAPRE[zona] || '#000',
+          weight: 2,
+          fillOpacity: 0.5
+        };
+      },
+      onEachFeature: (feature, layer) => {
+        const zona = feature.properties;
+        layer.bindPopup(`
+          <table class = "table-layer">
+                <thead>
+                <tr>
+                    <th> <b> IDENTIFICADOR </b> </th>
+                    <th> <b> CLAVE </b></th>
+                </tr>
+          </thead>
+          <tr>
+          <th>Polígono:</th> <td> ${feature.properties.Poligono}</td>
+          </tr>
+          <tr>
+          <th>Zona:</th> <td> ${feature.properties.Zona}</td>
+          </tr>
+          </table>
+          `);
+      }
+    });
+    
+    // No la agregamos por defecto, se puede activar desde el control
+    zonasAPRE.addTo(map); 
+  });
+
+  fetch("./layers/proteccion_vaquita_marina.geojson")
+  .then(res => res.json())
+  .then(data => {
+    zonasPVM = L.geoJSON(data, {
+      style: feature => {
+        const zona = feature.properties.Poligono;
+        return {
+          color: colorZonasPVM[zona] || '#000',
+          weight: 2,
+          fillOpacity: 0.5
+        };
+      },
+      onEachFeature: (feature, layer) => {
+        const zona = feature.properties;
+        layer.bindPopup(`
+          <table class = "table-layer">
+                <thead>
+                <tr>
+                    <th> <b> IDENTIFICADOR </b> </th>
+                    <th> <b> CLAVE </b></th>
+                </tr>
+          </thead>
+          <tr>
+          <th>Polígono:</th> <td> ${feature.properties.Poligono}</td>
+          </tr>
+          <tr>
+          <th>Zona:</th> <td> ${feature.properties.Zona}</td>
+          </tr>
+          </table>
+          `);
+      }
+    });
+    zonasPVM.addTo(map); 
+  });
+
+  fetch("./layers/area_tolerancia_cero.geojson")
+  .then(res => res.json())
+  .then(data => {
+    zonasATC = L.geoJSON(data, {
+      style: feature => {
+        const zona = feature.properties.Poligono;
+        return {
+          color: colorZonasATC[zona] || '#000',
+          weight: 2,
+          fillOpacity: 0.5
+        };
+      },
+      onEachFeature: (feature, layer) => {
+        const zona = feature.properties;
+        layer.bindPopup(`
+          <table class = "table-layer">
+                <thead>
+                <tr>
+                    <th> <b> IDENTIFICADOR </b> </th>
+                    <th> <b> CLAVE </b></th>
+                </tr>
+          </thead>
+          <tr>
+          <th>Polígono:</th> <td> ${feature.properties.Poligono}</td>
+          </tr>
+          <tr>
+          <th>Zona:</th> <td> ${feature.properties.Zona}</td>
+          </tr>
+          </table>
+          `);
+      }
+    });
+    zonasATC.addTo(map); 
+  });
 
   // Cargar poligonos
   fetch('./layers/poligonos.geojson') 

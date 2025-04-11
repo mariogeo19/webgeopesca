@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "area_prohibicion_redes_enmalle",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Poligono": "Área de prohibición de redes de enmalle", "Zona": "AGC" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -114.0228, 31.4933 ], [ -114.022, 30.095 ], [ -114.600005, 30.095 ], [ -114.8203, 31.5875 ], [ -114.5322, 31.7033 ], [ -114.0228, 31.4933 ] ] ] } }
+]
+}
