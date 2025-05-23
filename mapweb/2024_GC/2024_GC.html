@@ -458,6 +458,10 @@
                         <th scope="row">Foto</th>\
                         <td>' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
+                     <tr>\
+                        <th scope="row">Informe</th>\
+                        <td colspan="2"> <a href= https://www.gob.mx/imipas/documentos/evaluacion-de-recursos-pesqueros-en-el-noroeste-mexicano-golfo-de-california-y-costa-occidental-de-la-peninsula-de-baja-california target=_blank><b>ver</b></i></a></td>\
+                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -531,6 +535,14 @@
                     <tr>\
                         <th scope="row">Estación</th>\
                         <td>' + (feature.properties['Estación'] !== null ? autolinker.link(feature.properties['Estación'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Informe</th>\
+                        <td colspan="2"> <a href= https://www.gob.mx/imipas/documentos/evaluacion-de-recursos-pesqueros-en-el-noroeste-mexicano-golfo-de-california-y-costa-occidental-de-la-peninsula-de-baja-california target=_blank><b>ver</b></i></a></td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Biovolumen (1000/m<SUP>3</SUP>)</th>\
+                        <td>' + (feature.properties['Biovolumen'] !== null ? autolinker.link(feature.properties['Biovolumen'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
