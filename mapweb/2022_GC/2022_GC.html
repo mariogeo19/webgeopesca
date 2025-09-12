@@ -136,8 +136,19 @@
         });
         layer_ESRISatellite_2;
         map.addLayer(layer_ESRISatellite_2);
+
+        map.createPane('pane_JCFINP2205_depth_zmo_idw');
+        map.getPane('pane_JCFINP2205_depth_zmo_idw').style.zIndex = 403;
+        var img_JCFINP2205_depth_zmo_idw = 'data/JCFINP2205_depth_zmo_idw.png';
+        var img_bounds_JCFINP2205_depth_zmo_idw = [[21.279632234291707,-110.76181126883225],[26.124740766540345,-105.6174460331212]];
+        var layer_JCFINP2205_depth_zmo_idw = new L.imageOverlay(img_JCFINP2205_depth_zmo_idw,
+                                              img_bounds_JCFINP2205_depth_zmo_idw,
+                                              {pane: 'pane_JCFINP2205_depth_zmo_idw'});
+        bounds_group.addLayer(layer_JCFINP2205_depth_zmo_idw);
+        map.addLayer(layer_JCFINP2205_depth_zmo_idw);
+
         map.createPane('pane_ClorofilaaGolfodeCalifornia2022_3');
-        map.getPane('pane_ClorofilaaGolfodeCalifornia2022_3').style.zIndex = 403;
+        map.getPane('pane_ClorofilaaGolfodeCalifornia2022_3').style.zIndex = 404;
         var img_ClorofilaaGolfodeCalifornia2022_3 = 'data/ClorofilaaGolfodeCalifornia2022_3.png';
         var img_bounds_ClorofilaaGolfodeCalifornia2022_3 = [[21.16164111001411,-112.93828066405895],[29.40840469394861,-105.61045569889716]];
         var layer_ClorofilaaGolfodeCalifornia2022_3 = new L.imageOverlay(img_ClorofilaaGolfodeCalifornia2022_3,
@@ -146,7 +157,7 @@
         bounds_group.addLayer(layer_ClorofilaaGolfodeCalifornia2022_3);
         map.addLayer(layer_ClorofilaaGolfodeCalifornia2022_3);
         map.createPane('pane_OxgenoGolfodeCalifornia2022_4');
-        map.getPane('pane_OxgenoGolfodeCalifornia2022_4').style.zIndex = 404;
+        map.getPane('pane_OxgenoGolfodeCalifornia2022_4').style.zIndex = 405;
         var img_OxgenoGolfodeCalifornia2022_4 = 'data/OxgenoGolfodeCalifornia2022_4.png';
         var img_bounds_OxgenoGolfodeCalifornia2022_4 = [[21.157337962884725,-112.93828066405895],[29.40828382213005,-105.6156846259457]];
         var layer_OxgenoGolfodeCalifornia2022_4 = new L.imageOverlay(img_OxgenoGolfodeCalifornia2022_4,
@@ -155,7 +166,7 @@
         bounds_group.addLayer(layer_OxgenoGolfodeCalifornia2022_4);
         map.addLayer(layer_OxgenoGolfodeCalifornia2022_4);
         map.createPane('pane_SalinidadGolfodeCalifornia2022_5');
-        map.getPane('pane_SalinidadGolfodeCalifornia2022_5').style.zIndex = 405;
+        map.getPane('pane_SalinidadGolfodeCalifornia2022_5').style.zIndex = 406;
         var img_SalinidadGolfodeCalifornia2022_5 = 'data/SalinidadGolfodeCalifornia2022_5.png';
         var img_bounds_SalinidadGolfodeCalifornia2022_5 = [[21.16164111001411,-112.93828066405895],[29.40840469394861,-105.61045569889716]];
         var layer_SalinidadGolfodeCalifornia2022_5 = new L.imageOverlay(img_SalinidadGolfodeCalifornia2022_5,
@@ -164,7 +175,7 @@
         bounds_group.addLayer(layer_SalinidadGolfodeCalifornia2022_5);
         map.addLayer(layer_SalinidadGolfodeCalifornia2022_5);
         map.createPane('pane_TemperaturaGolfodeCalifornia2022_6');
-        map.getPane('pane_TemperaturaGolfodeCalifornia2022_6').style.zIndex = 406;
+        map.getPane('pane_TemperaturaGolfodeCalifornia2022_6').style.zIndex = 407;
         var img_TemperaturaGolfodeCalifornia2022_6 = 'data/TemperaturaGolfodeCalifornia2022_6.png';
         var img_bounds_TemperaturaGolfodeCalifornia2022_6 = [[21.16164111001411,-112.93828066405895],[29.40840469394861,-105.61045569889716]];
         var layer_TemperaturaGolfodeCalifornia2022_6 = new L.imageOverlay(img_TemperaturaGolfodeCalifornia2022_6,
@@ -206,7 +217,7 @@
             }
         }
         map.createPane('pane_RutanavegadaCostadeSinaloa2022_7');
-        map.getPane('pane_RutanavegadaCostadeSinaloa2022_7').style.zIndex = 407;
+        map.getPane('pane_RutanavegadaCostadeSinaloa2022_7').style.zIndex = 408;
         map.getPane('pane_RutanavegadaCostadeSinaloa2022_7').style['mix-blend-mode'] = 'normal';
         var layer_RutanavegadaCostadeSinaloa2022_7 = new L.geoJson(json_RutanavegadaCostadeSinaloa2022_7, {
             attribution: '',
@@ -397,7 +408,7 @@
             }
         }
         map.createPane('pane_EnergaAcsticaGolfodeCalifornia2022_8');
-        map.getPane('pane_EnergaAcsticaGolfodeCalifornia2022_8').style.zIndex = 408;
+        map.getPane('pane_EnergaAcsticaGolfodeCalifornia2022_8').style.zIndex = 409;
         map.getPane('pane_EnergaAcsticaGolfodeCalifornia2022_8').style['mix-blend-mode'] = 'normal';
         var layer_EnergaAcsticaGolfodeCalifornia2022_8 = new L.geoJson(json_EnergaAcsticaGolfodeCalifornia2022_8, {
             attribution: '',
@@ -476,7 +487,7 @@
             }
         }
         map.createPane('pane_LancesdepescaGolfodeCalifornia2022_9');
-        map.getPane('pane_LancesdepescaGolfodeCalifornia2022_9').style.zIndex = 409;
+        map.getPane('pane_LancesdepescaGolfodeCalifornia2022_9').style.zIndex = 410;
         map.getPane('pane_LancesdepescaGolfodeCalifornia2022_9').style['mix-blend-mode'] = 'normal';
         var layer_LancesdepescaGolfodeCalifornia2022_9 = new L.geoJson(json_LancesdepescaGolfodeCalifornia2022_9, {
             attribution: '',
@@ -552,7 +563,7 @@
             }
         }
         map.createPane('pane_EstacionesOceanogrficasGolfodeCalifornia2022_10');
-        map.getPane('pane_EstacionesOceanogrficasGolfodeCalifornia2022_10').style.zIndex = 410;
+        map.getPane('pane_EstacionesOceanogrficasGolfodeCalifornia2022_10').style.zIndex = 411;
         map.getPane('pane_EstacionesOceanogrficasGolfodeCalifornia2022_10').style['mix-blend-mode'] = 'normal';
         var layer_EstacionesOceanogrficasGolfodeCalifornia2022_10 = new L.geoJson(json_EstacionesOceanogrficasGolfodeCalifornia2022_10, {
             attribution: '',
@@ -571,8 +582,19 @@
         });
         bounds_group.addLayer(layer_EstacionesOceanogrficasGolfodeCalifornia2022_10);
         map.addLayer(layer_EstacionesOceanogrficasGolfodeCalifornia2022_10);
+
+        map.createPane('pane_JCFINP2201_depth_zmo_idw');
+        map.getPane('pane_JCFINP2201_depth_zmo_idw').style.zIndex = 412;
+        var img_JCFINP2201_depth_zmo_idw = 'data/JCFINP2201_depth_zmo_idw.png';
+        var img_bounds_JCFINP2201_depth_zmo_idw = [[23.56227936511578,-110.54025033862344],[27.243960244063942,-107.58924876343579]];
+        var layer_JCFINP2201_depth_zmo_idw = new L.imageOverlay(img_JCFINP2201_depth_zmo_idw,
+                                              img_bounds_JCFINP2201_depth_zmo_idw,
+                                              {pane: 'pane_JCFINP2201_depth_zmo_idw'});
+        bounds_group.addLayer(layer_JCFINP2201_depth_zmo_idw);
+        //map.addLayer(layer_JCFINP2201_depth_zmo_idw);
+
         map.createPane('pane_ClorofilaaCostadeSinaloa2022_11');
-        map.getPane('pane_ClorofilaaCostadeSinaloa2022_11').style.zIndex = 411;
+        map.getPane('pane_ClorofilaaCostadeSinaloa2022_11').style.zIndex = 413;
         var img_ClorofilaaCostadeSinaloa2022_11 = 'data/ClorofilaaCostadeSinaloa2022_11.png';
         var img_bounds_ClorofilaaCostadeSinaloa2022_11 = [[23.55952353216422,-110.54542832479126],[27.246009247032948,-107.58963990634791]];
         var layer_ClorofilaaCostadeSinaloa2022_11 = new L.imageOverlay(img_ClorofilaaCostadeSinaloa2022_11,
@@ -581,7 +603,7 @@
         bounds_group.addLayer(layer_ClorofilaaCostadeSinaloa2022_11);
         //map.addLayer(layer_ClorofilaaCostadeSinaloa2022_11);
         map.createPane('pane_OxgenoCostadeSinaloa2022_12');
-        map.getPane('pane_OxgenoCostadeSinaloa2022_12').style.zIndex = 412;
+        map.getPane('pane_OxgenoCostadeSinaloa2022_12').style.zIndex = 414;
         var img_OxgenoCostadeSinaloa2022_12 = 'data/OxgenoCostadeSinaloa2022_12.png';
         var img_bounds_OxgenoCostadeSinaloa2022_12 = [[23.550330716476083,-110.54542832479126],[27.246009247032948,-107.58511439980438]];
         var layer_OxgenoCostadeSinaloa2022_12 = new L.imageOverlay(img_OxgenoCostadeSinaloa2022_12,
@@ -590,7 +612,7 @@
         bounds_group.addLayer(layer_OxgenoCostadeSinaloa2022_12);
         //map.addLayer(layer_OxgenoCostadeSinaloa2022_12);
         map.createPane('pane_SalinidadCostadeSinaloa2022_13');
-        map.getPane('pane_SalinidadCostadeSinaloa2022_13').style.zIndex = 413;
+        map.getPane('pane_SalinidadCostadeSinaloa2022_13').style.zIndex = 415;
         var img_SalinidadCostadeSinaloa2022_13 = 'data/SalinidadCostadeSinaloa2022_13.png';
         var img_bounds_SalinidadCostadeSinaloa2022_13 = [[23.55952353216422,-110.54542832479126],[27.246009247032948,-107.58963990634791]];
         var layer_SalinidadCostadeSinaloa2022_13 = new L.imageOverlay(img_SalinidadCostadeSinaloa2022_13,
@@ -599,7 +621,7 @@
         bounds_group.addLayer(layer_SalinidadCostadeSinaloa2022_13);
         //map.addLayer(layer_SalinidadCostadeSinaloa2022_13);
         map.createPane('pane_TemperaturaCostadeSinaloa2022_14');
-        map.getPane('pane_TemperaturaCostadeSinaloa2022_14').style.zIndex = 414;
+        map.getPane('pane_TemperaturaCostadeSinaloa2022_14').style.zIndex = 416;
         var img_TemperaturaCostadeSinaloa2022_14 = 'data/TemperaturaCostadeSinaloa2022_14.png';
         var img_bounds_TemperaturaCostadeSinaloa2022_14 = [[23.55952353216422,-110.54542832479126],[27.246009247032948,-107.58963990634791]];
         var layer_TemperaturaCostadeSinaloa2022_14 = new L.imageOverlay(img_TemperaturaCostadeSinaloa2022_14,
@@ -638,7 +660,7 @@
             }
         }
         map.createPane('pane_RutanavegadaCostadeSinaloa2022_15');
-        map.getPane('pane_RutanavegadaCostadeSinaloa2022_15').style.zIndex = 415;
+        map.getPane('pane_RutanavegadaCostadeSinaloa2022_15').style.zIndex = 417;
         map.getPane('pane_RutanavegadaCostadeSinaloa2022_15').style['mix-blend-mode'] = 'normal';
         var layer_RutanavegadaCostadeSinaloa2022_15 = new L.geoJson(json_RutanavegadaCostadeSinaloa2022_15, {
             attribution: '',
@@ -794,7 +816,7 @@
             }
         }
         map.createPane('pane_EnergaAcsticaCostadeSinaloa2022_16');
-        map.getPane('pane_EnergaAcsticaCostadeSinaloa2022_16').style.zIndex = 416;
+        map.getPane('pane_EnergaAcsticaCostadeSinaloa2022_16').style.zIndex = 418;
         map.getPane('pane_EnergaAcsticaCostadeSinaloa2022_16').style['mix-blend-mode'] = 'normal';
         var layer_EnergaAcsticaCostadeSinaloa2022_16 = new L.geoJson(json_EnergaAcsticaCostadeSinaloa2022_16, {
             attribution: '',
@@ -873,7 +895,7 @@
             }
         }
         map.createPane('pane_LancesdepescaCostadeSinaloa2022_17');
-        map.getPane('pane_LancesdepescaCostadeSinaloa2022_17').style.zIndex = 417;
+        map.getPane('pane_LancesdepescaCostadeSinaloa2022_17').style.zIndex = 419;
         map.getPane('pane_LancesdepescaCostadeSinaloa2022_17').style['mix-blend-mode'] = 'normal';
         var layer_LancesdepescaCostadeSinaloa2022_17 = new L.geoJson(json_LancesdepescaCostadeSinaloa2022_17, {
             attribution: '',
@@ -945,7 +967,7 @@
             }
         }
         map.createPane('pane_EstacionesOceanogrficasCostadeSinaloa2022_18');
-        map.getPane('pane_EstacionesOceanogrficasCostadeSinaloa2022_18').style.zIndex = 418;
+        map.getPane('pane_EstacionesOceanogrficasCostadeSinaloa2022_18').style.zIndex = 420;
         map.getPane('pane_EstacionesOceanogrficasCostadeSinaloa2022_18').style['mix-blend-mode'] = 'normal';
         var layer_EstacionesOceanogrficasCostadeSinaloa2022_18 = new L.geoJson(json_EstacionesOceanogrficasCostadeSinaloa2022_18, {
             attribution: '',
@@ -965,7 +987,7 @@
         bounds_group.addLayer(layer_EstacionesOceanogrficasCostadeSinaloa2022_18);
         //map.addLayer(layer_EstacionesOceanogrficasCostadeSinaloa2022_18);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/EstacionesOceanogrficasCostadeSinaloa2022_18.png" /> Estaciones Oceanográficas Costa de Sinaloa 2022': layer_EstacionesOceanogrficasCostadeSinaloa2022_18,'<img src="legend/LancesdepescaCostadeSinaloa2022_17.png" /> Lances de pesca Costa de Sinaloa 2022': layer_LancesdepescaCostadeSinaloa2022_17,'Energía Acústica Costa de Sinaloa 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_0500.png" /></td><td>0 - 50</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_505001.png" /></td><td>50 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_50025002.png" /></td><td>500 - 2500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_250050003.png" /></td><td>2500 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_5000200004.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_2000033539095.png" /></td><td>20000 - 33539.09</td></tr></table>': layer_EnergaAcsticaCostadeSinaloa2022_16,'<img src="legend/RutanavegadaCostadeSinaloa2022_15.png" /> Ruta navegada Costa de Sinaloa 2022': layer_RutanavegadaCostadeSinaloa2022_15,"Temperatura Costa de Sinaloa 2022": layer_TemperaturaCostadeSinaloa2022_14,"Salinidad Costa de Sinaloa 2022": layer_SalinidadCostadeSinaloa2022_13,"Oxígeno Costa de Sinaloa 2022": layer_OxgenoCostadeSinaloa2022_12,"Clorofila-a Costa de Sinaloa 2022": layer_ClorofilaaCostadeSinaloa2022_11,'<img src="legend/EstacionesOceanogrficasGolfodeCalifornia2022_10.png" /> Estaciones Oceanográficas Golfo de California 2022': layer_EstacionesOceanogrficasGolfodeCalifornia2022_10,'<img src="legend/LancesdepescaGolfodeCalifornia2022_9.png" /> Lances de pesca Golfo de California 2022': layer_LancesdepescaGolfodeCalifornia2022_9,'Energía Acústica Golfo de California 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_12001.png" /></td><td>1 - 200</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_2005002.png" /></td><td>200 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_50020003.png" /></td><td>500 - 2000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_200050004.png" /></td><td>2000 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_5000200005.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_20000500006.png" /></td><td>20000 - 50000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_500007.png" /></td><td>> 50000 </td></tr></table>': layer_EnergaAcsticaGolfodeCalifornia2022_8,'<img src="legend/RutanavegadaCostadeSinaloa2022_7.png" /> Ruta navegada Costa de Sinaloa 2022': layer_RutanavegadaCostadeSinaloa2022_7,"Temperatura Golfo de California 2022": layer_TemperaturaGolfodeCalifornia2022_6,"Salinidad Golfo de California 2022": layer_SalinidadGolfodeCalifornia2022_5,"Oxígeno Golfo de California 2022": layer_OxgenoGolfodeCalifornia2022_4,"Clorofila-a Golfo de California 2022": layer_ClorofilaaGolfodeCalifornia2022_3,"ESRI Satellite": layer_ESRISatellite_2,"Google.cn Normal": layer_GooglecnNormal_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/EstacionesOceanogrficasCostadeSinaloa2022_18.png" /> Estaciones Oceanográficas Costa de Sinaloa 2022': layer_EstacionesOceanogrficasCostadeSinaloa2022_18,'<img src="legend/LancesdepescaCostadeSinaloa2022_17.png" /> Lances de pesca Costa de Sinaloa 2022': layer_LancesdepescaCostadeSinaloa2022_17,'Energía Acústica Costa de Sinaloa 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_0500.png" /></td><td>0 - 50</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_505001.png" /></td><td>50 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_50025002.png" /></td><td>500 - 2500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_250050003.png" /></td><td>2500 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_5000200004.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostadeSinaloa2022_16_2000033539095.png" /></td><td>20000 - 33539.09</td></tr></table>': layer_EnergaAcsticaCostadeSinaloa2022_16,'<img src="legend/RutanavegadaCostadeSinaloa2022_15.png" /> Ruta navegada Costa de Sinaloa 2022': layer_RutanavegadaCostadeSinaloa2022_15,"Temperatura Costa de Sinaloa 2022": layer_TemperaturaCostadeSinaloa2022_14,"Salinidad Costa de Sinaloa 2022": layer_SalinidadCostadeSinaloa2022_13,"Oxígeno Costa de Sinaloa 2022": layer_OxgenoCostadeSinaloa2022_12,"Clorofila-a Costa de Sinaloa 2022": layer_ClorofilaaCostadeSinaloa2022_11, "ZMO Costa de Sinaloa 2022": layer_JCFINP2201_depth_zmo_idw,'<img src="legend/EstacionesOceanogrficasGolfodeCalifornia2022_10.png" /> Estaciones Oceanográficas Golfo de California 2022': layer_EstacionesOceanogrficasGolfodeCalifornia2022_10,'<img src="legend/LancesdepescaGolfodeCalifornia2022_9.png" /> Lances de pesca Golfo de California 2022': layer_LancesdepescaGolfodeCalifornia2022_9,'Energía Acústica Golfo de California 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_12001.png" /></td><td>1 - 200</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_2005002.png" /></td><td>200 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_50020003.png" /></td><td>500 - 2000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_200050004.png" /></td><td>2000 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_5000200005.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_20000500006.png" /></td><td>20000 - 50000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaGolfodeCalifornia2022_8_500007.png" /></td><td>> 50000 </td></tr></table>': layer_EnergaAcsticaGolfodeCalifornia2022_8,'<img src="legend/RutanavegadaCostadeSinaloa2022_7.png" /> Ruta navegada Costa de Sinaloa 2022': layer_RutanavegadaCostadeSinaloa2022_7,"Temperatura Golfo de California 2022": layer_TemperaturaGolfodeCalifornia2022_6,"Salinidad Golfo de California 2022": layer_SalinidadGolfodeCalifornia2022_5,"Oxígeno Golfo de California 2022": layer_OxgenoGolfodeCalifornia2022_4,"Clorofila-a Golfo de California 2022": layer_ClorofilaaGolfodeCalifornia2022_3, "ZMO Golfo de California 2022": layer_JCFINP2205_depth_zmo_idw, "ESRI Satellite": layer_ESRISatellite_2,"Google.cn Normal": layer_GooglecnNormal_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
         setBounds();
         L.ImageOverlay.include({
             getBounds: function () {

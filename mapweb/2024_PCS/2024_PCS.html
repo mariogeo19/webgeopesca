@@ -160,8 +160,19 @@
         });
         layer_ESRISatellite_2;
         map.addLayer(layer_ESRISatellite_2);
+
+        map.createPane('pane_JCFINP2403_depth_zmo_idw');
+        map.getPane('pane_JCFINP2403_depth_zmo_idw').style.zIndex = 403;
+        var img_JCFINP2403_depth_zmo_idw = 'data/JCFINP2403_depth_zmo_idw.png';
+        var img_bounds_JCFINP2403_depth_zmo_idw = [[13.878144738143561,-96.44982420233589],[16.18702827930211,-92.32780149863733]];
+        var layer_JCFINP2403_depth_zmo_idw = new L.imageOverlay(img_JCFINP2403_depth_zmo_idw,
+                                              img_bounds_JCFINP2403_depth_zmo_idw,
+                                              {pane: 'pane_JCFINP2403_depth_zmo_idw'});
+        bounds_group.addLayer(layer_JCFINP2403_depth_zmo_idw);
+        map.addLayer(layer_JCFINP2403_depth_zmo_idw);
+
         map.createPane('pane_ClorofilaaPacficoCentroSur2024_3');
-        map.getPane('pane_ClorofilaaPacficoCentroSur2024_3').style.zIndex = 403;
+        map.getPane('pane_ClorofilaaPacficoCentroSur2024_3').style.zIndex = 404;
         var img_ClorofilaaPacficoCentroSur2024_3 = 'data/ClorofilaaPacficoCentroSur2024_3.png';
         var img_bounds_ClorofilaaPacficoCentroSur2024_3 = [[13.878144738143561,-96.44982420233589],[16.18702827930211,-92.32780149863733]];
         var layer_ClorofilaaPacficoCentroSur2024_3 = new L.imageOverlay(img_ClorofilaaPacficoCentroSur2024_3,
@@ -170,7 +181,7 @@
         bounds_group.addLayer(layer_ClorofilaaPacficoCentroSur2024_3);
         map.addLayer(layer_ClorofilaaPacficoCentroSur2024_3);
         map.createPane('pane_OxgenoPacficoCentroSur2024_4');
-        map.getPane('pane_OxgenoPacficoCentroSur2024_4').style.zIndex = 404;
+        map.getPane('pane_OxgenoPacficoCentroSur2024_4').style.zIndex = 405;
         var img_OxgenoPacficoCentroSur2024_4 = 'data/OxgenoPacficoCentroSur2024_4.png';
         var img_bounds_OxgenoPacficoCentroSur2024_4 = [[13.878144738143561,-96.44982420233589],[16.18702827930211,-92.32780149863733]];
         var layer_OxgenoPacficoCentroSur2024_4 = new L.imageOverlay(img_OxgenoPacficoCentroSur2024_4,
@@ -179,7 +190,7 @@
         bounds_group.addLayer(layer_OxgenoPacficoCentroSur2024_4);
         map.addLayer(layer_OxgenoPacficoCentroSur2024_4);
         map.createPane('pane_SalinidadPacficoCentroSur2024_5');
-        map.getPane('pane_SalinidadPacficoCentroSur2024_5').style.zIndex = 405;
+        map.getPane('pane_SalinidadPacficoCentroSur2024_5').style.zIndex = 406;
         var img_SalinidadPacficoCentroSur2024_5 = 'data/SalinidadPacficoCentroSur2024_5.png';
         var img_bounds_SalinidadPacficoCentroSur2024_5 = [[13.878144738143561,-96.44982420233589],[16.18702827930211,-92.32780149863733]];
         var layer_SalinidadPacficoCentroSur2024_5 = new L.imageOverlay(img_SalinidadPacficoCentroSur2024_5,
@@ -188,7 +199,7 @@
         bounds_group.addLayer(layer_SalinidadPacficoCentroSur2024_5);
         map.addLayer(layer_SalinidadPacficoCentroSur2024_5);
         map.createPane('pane_TemperaturaPacficoCentroSur2024_6');
-        map.getPane('pane_TemperaturaPacficoCentroSur2024_6').style.zIndex = 406;
+        map.getPane('pane_TemperaturaPacficoCentroSur2024_6').style.zIndex = 407;
         var img_TemperaturaPacficoCentroSur2024_6 = 'data/TemperaturaPacficoCentroSur2024_6.png';
         var img_bounds_TemperaturaPacficoCentroSur2024_6 = [[13.878144738143561,-96.44982420233589],[16.18702827930211,-92.32780149863733]];
         var layer_TemperaturaPacficoCentroSur2024_6 = new L.imageOverlay(img_TemperaturaPacficoCentroSur2024_6,
@@ -240,7 +251,7 @@
             }
         }
         map.createPane('pane_RutanavegadaPacficoCentroSur2024_7');
-        map.getPane('pane_RutanavegadaPacficoCentroSur2024_7').style.zIndex = 407;
+        map.getPane('pane_RutanavegadaPacficoCentroSur2024_7').style.zIndex = 408;
         map.getPane('pane_RutanavegadaPacficoCentroSur2024_7').style['mix-blend-mode'] = 'normal';
         var layer_RutanavegadaPacficoCentroSur2024_7 = new L.geoJson(json_RutanavegadaPacficoCentroSur2024_7, {
             attribution: '',
@@ -403,7 +414,7 @@
             }
         }
         map.createPane('pane_EnergaAcsticaPacficoCentroSur2024_8');
-        map.getPane('pane_EnergaAcsticaPacficoCentroSur2024_8').style.zIndex = 408;
+        map.getPane('pane_EnergaAcsticaPacficoCentroSur2024_8').style.zIndex = 409;
         map.getPane('pane_EnergaAcsticaPacficoCentroSur2024_8').style['mix-blend-mode'] = 'normal';
         var layer_EnergaAcsticaPacficoCentroSur2024_8 = new L.geoJson(json_EnergaAcsticaPacficoCentroSur2024_8, {
             attribution: '',
@@ -489,7 +500,7 @@
             }
         }
         map.createPane('pane_LancesdepescaPacficoCentroSur2024_9');
-        map.getPane('pane_LancesdepescaPacficoCentroSur2024_9').style.zIndex = 409;
+        map.getPane('pane_LancesdepescaPacficoCentroSur2024_9').style.zIndex = 410;
         map.getPane('pane_LancesdepescaPacficoCentroSur2024_9').style['mix-blend-mode'] = 'normal';
         var layer_LancesdepescaPacficoCentroSur2024_9 = new L.geoJson(json_LancesdepescaPacficoCentroSur2024_9, {
             attribution: '',
@@ -567,7 +578,7 @@
             }
         }
         map.createPane('pane_EstacionesOceanogrficasPacficoCentroSur2024_10');
-        map.getPane('pane_EstacionesOceanogrficasPacficoCentroSur2024_10').style.zIndex = 410;
+        map.getPane('pane_EstacionesOceanogrficasPacficoCentroSur2024_10').style.zIndex = 411;
         map.getPane('pane_EstacionesOceanogrficasPacficoCentroSur2024_10').style['mix-blend-mode'] = 'normal';
         var layer_EstacionesOceanogrficasPacficoCentroSur2024_10 = new L.geoJson(json_EstacionesOceanogrficasPacficoCentroSur2024_10, {
             attribution: '',
@@ -595,6 +606,7 @@
             {label: "Salinidad Pacífico Centro-Sur 2024", layer: layer_SalinidadPacficoCentroSur2024_5},
             {label: "Oxígeno Pacífico Centro-Sur 2024", layer: layer_OxgenoPacficoCentroSur2024_4},
             {label: "Clorofila-a Pacífico Centro-Sur 2024", layer: layer_ClorofilaaPacficoCentroSur2024_3},
+            {label: "ZMO Pacífico Centro-Sur 2024", layer: layer_JCFINP2403_depth_zmo_idw},
             {label: "ESRI Satellite", layer: layer_ESRISatellite_2},
             {label: "Google.cn Normal", layer: layer_GooglecnNormal_1},
             {label: "OSM Standard", layer: layer_OSMStandard_0},]

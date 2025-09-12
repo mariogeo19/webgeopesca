@@ -160,8 +160,19 @@
         });
         layer_ESRISatellite_2;
         map.addLayer(layer_ESRISatellite_2);
+
+        map.createPane('pane_JCFINP2405_depth_zmo_kriging_0');
+        map.getPane('pane_JCFINP2405_depth_zmo_kriging_0').style.zIndex = 403;
+        var img_JCFINP2405_depth_zmo_kriging_0 = 'data/JCFINP2405_depth_zmo_kriging_0.png';
+        var img_bounds_JCFINP2405_depth_zmo_kriging_0 = [[22.239948713428415,-117.68590076275348],[32.919728738134296,-110.03190130991925]];
+        var layer_JCFINP2405_depth_zmo_kriging_0 = new L.imageOverlay(img_JCFINP2405_depth_zmo_kriging_0,
+                                              img_bounds_JCFINP2405_depth_zmo_kriging_0,
+                                              {pane: 'pane_JCFINP2405_depth_zmo_kriging_0'});
+        bounds_group.addLayer(layer_JCFINP2405_depth_zmo_kriging_0);
+        map.addLayer(layer_JCFINP2405_depth_zmo_kriging_0);
+
         map.createPane('pane_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3');
-        map.getPane('pane_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3').style.zIndex = 403;
+        map.getPane('pane_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3').style.zIndex = 404;
         var img_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3 = 'data/ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3.png';
         var img_bounds_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3 = [[22.239948713428415,-117.68590076275348],[32.919728738134296,-110.03190130991925]];
         var layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3 = new L.imageOverlay(img_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3,
@@ -170,7 +181,7 @@
         bounds_group.addLayer(layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3);
         map.addLayer(layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3);
         map.createPane('pane_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4');
-        map.getPane('pane_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4').style.zIndex = 404;
+        map.getPane('pane_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4').style.zIndex = 405;
         var img_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4 = 'data/OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4.png';
         var img_bounds_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4 = [[22.239948713428415,-117.68590076275348],[32.919728738134296,-110.03190130991925]];
         var layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4 = new L.imageOverlay(img_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4,
@@ -179,7 +190,7 @@
         bounds_group.addLayer(layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4);
         map.addLayer(layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4);
         map.createPane('pane_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5');
-        map.getPane('pane_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5').style.zIndex = 405;
+        map.getPane('pane_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5').style.zIndex = 406;
         var img_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5 = 'data/SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5.png';
         var img_bounds_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5 = [[22.239948713428415,-117.68590076275348],[32.919728738134296,-110.03190130991925]];
         var layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5 = new L.imageOverlay(img_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5,
@@ -188,7 +199,7 @@
         bounds_group.addLayer(layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5);
         map.addLayer(layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5);
         map.createPane('pane_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6');
-        map.getPane('pane_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6').style.zIndex = 406;
+        map.getPane('pane_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6').style.zIndex = 407;
         var img_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6 = 'data/TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6.png';
         var img_bounds_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6 = [[22.239948713428415,-117.68590076275348],[32.919728738134296,-110.03190130991925]];
         var layer_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6 = new L.imageOverlay(img_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2024_6,
@@ -236,7 +247,7 @@
             }
         }
         map.createPane('pane_RutanavegadaCostaPennsunladeBajaCalifornia2024_7');
-        map.getPane('pane_RutanavegadaCostaPennsunladeBajaCalifornia2024_7').style.zIndex = 407;
+        map.getPane('pane_RutanavegadaCostaPennsunladeBajaCalifornia2024_7').style.zIndex = 408;
         map.getPane('pane_RutanavegadaCostaPennsunladeBajaCalifornia2024_7').style['mix-blend-mode'] = 'normal';
         var layer_RutanavegadaCostaPennsunladeBajaCalifornia2024_7 = new L.geoJson(json_RutanavegadaCostaPennsunladeBajaCalifornia2024_7, {
             attribution: '',
@@ -411,7 +422,7 @@
             }
         }
         map.createPane('pane_EnergaAcsticaCostaPennsuladeBajaCalifornia2024_8');
-        map.getPane('pane_EnergaAcsticaCostaPennsuladeBajaCalifornia2024_8').style.zIndex = 408;
+        map.getPane('pane_EnergaAcsticaCostaPennsuladeBajaCalifornia2024_8').style.zIndex = 409;
         map.getPane('pane_EnergaAcsticaCostaPennsuladeBajaCalifornia2024_8').style['mix-blend-mode'] = 'normal';
         var layer_EnergaAcsticaCostaPennsuladeBajaCalifornia2024_8 = new L.geoJson(json_EnergaAcsticaCostaPennsuladeBajaCalifornia2024_8, {
             attribution: '',
@@ -497,7 +508,7 @@
             }
         }
         map.createPane('pane_LancesdepescaOccidentalPennsunladeBajaCalifornia2024_9');
-        map.getPane('pane_LancesdepescaOccidentalPennsunladeBajaCalifornia2024_9').style.zIndex = 409;
+        map.getPane('pane_LancesdepescaOccidentalPennsunladeBajaCalifornia2024_9').style.zIndex = 410;
         map.getPane('pane_LancesdepescaOccidentalPennsunladeBajaCalifornia2024_9').style['mix-blend-mode'] = 'normal';
         var layer_LancesdepescaOccidentalPennsunladeBajaCalifornia2024_9 = new L.geoJson(json_LancesdepescaOccidentalPennsunladeBajaCalifornia2024_9, {
             attribution: '',
@@ -575,7 +586,7 @@
             }
         }
         map.createPane('pane_EstacionesOceanogrficasCostaPennsuladeBajaCalifornia2024_10');
-        map.getPane('pane_EstacionesOceanogrficasCostaPennsuladeBajaCalifornia2024_10').style.zIndex = 410;
+        map.getPane('pane_EstacionesOceanogrficasCostaPennsuladeBajaCalifornia2024_10').style.zIndex = 411;
         map.getPane('pane_EstacionesOceanogrficasCostaPennsuladeBajaCalifornia2024_10').style['mix-blend-mode'] = 'normal';
         var layer_EstacionesOceanogrficasCostaPennsuladeBajaCalifornia2024_10 = new L.geoJson(json_EstacionesOceanogrficasCostaPennsuladeBajaCalifornia2024_10, {
             attribution: '',
@@ -603,6 +614,7 @@
             {label: "Salinidad Costa Occidental Península de Baja California 2024", layer: layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2024_5},
             {label: "Oxígeno Costa Occidental Península de Baja California 2024", layer: layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2024_4},
             {label: "Clorofila-a Costa Occidental Península de Baja California 2024", layer: layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2024_3},
+            {label: "ZMO Costa Occidental Península de Baja California 2024", layer: layer_JCFINP2405_depth_zmo_kriging_0},
             {label: "ESRI Satellite", layer: layer_ESRISatellite_2},
             {label: "Google.cn Normal", layer: layer_GooglecnNormal_1},
             {label: "OSM Standard", layer: layer_OSMStandard_0},]

@@ -160,8 +160,19 @@
         });
         layer_ESRISatellite_2;
         map.addLayer(layer_ESRISatellite_2);
+
+        map.createPane('pane_JCFINP2404_depth_zmo_splines');
+        map.getPane('pane_JCFINP2404_depth_zmo_splines').style.zIndex = 403;
+        var img_JCFINP2404_depth_zmo_splines = 'data/JCFINP2404_depth_zmo_splines.png';
+        var img_bounds_JCFINP2404_depth_zmo_splines = [[21.785496612300363,-111.43167565491147],[26.9416408796275,-105.80332206060433]];
+        var layer_JCFINP2404_depth_zmo_splines = new L.imageOverlay(img_JCFINP2404_depth_zmo_splines,
+                                              img_bounds_JCFINP2404_depth_zmo_splines,
+                                              {pane: 'pane_JCFINP2404_depth_zmo_splines'});
+        bounds_group.addLayer(layer_JCFINP2404_depth_zmo_splines);
+        map.addLayer(layer_JCFINP2404_depth_zmo_splines);
+
         map.createPane('pane_ClorofilaaGolfodeCalifornia2024_3');
-        map.getPane('pane_ClorofilaaGolfodeCalifornia2024_3').style.zIndex = 403;
+        map.getPane('pane_ClorofilaaGolfodeCalifornia2024_3').style.zIndex = 404;
         var img_ClorofilaaGolfodeCalifornia2024_3 = 'data/ClorofilaaGolfodeCalifornia2024_3.png';
         var img_bounds_ClorofilaaGolfodeCalifornia2024_3 = [[21.785496612300363,-111.43167565491147],[26.9416408796275,-105.80332206060433]];
         var layer_ClorofilaaGolfodeCalifornia2024_3 = new L.imageOverlay(img_ClorofilaaGolfodeCalifornia2024_3,
@@ -170,7 +181,7 @@
         bounds_group.addLayer(layer_ClorofilaaGolfodeCalifornia2024_3);
         map.addLayer(layer_ClorofilaaGolfodeCalifornia2024_3);
         map.createPane('pane_OxgenoGolfodeCalifornia2024_4');
-        map.getPane('pane_OxgenoGolfodeCalifornia2024_4').style.zIndex = 404;
+        map.getPane('pane_OxgenoGolfodeCalifornia2024_4').style.zIndex = 405;
         var img_OxgenoGolfodeCalifornia2024_4 = 'data/OxgenoGolfodeCalifornia2024_4.png';
         var img_bounds_OxgenoGolfodeCalifornia2024_4 = [[21.785496612300363,-111.43167565491147],[26.9416408796275,-105.80332206060433]];
         var layer_OxgenoGolfodeCalifornia2024_4 = new L.imageOverlay(img_OxgenoGolfodeCalifornia2024_4,
@@ -179,7 +190,7 @@
         bounds_group.addLayer(layer_OxgenoGolfodeCalifornia2024_4);
         map.addLayer(layer_OxgenoGolfodeCalifornia2024_4);
         map.createPane('pane_SalinidadGolfodeCalifornia2024_5');
-        map.getPane('pane_SalinidadGolfodeCalifornia2024_5').style.zIndex = 405;
+        map.getPane('pane_SalinidadGolfodeCalifornia2024_5').style.zIndex = 406;
         var img_SalinidadGolfodeCalifornia2024_5 = 'data/SalinidadGolfodeCalifornia2024_5.png';
         var img_bounds_SalinidadGolfodeCalifornia2024_5 = [[21.785496612300363,-111.43167565491147],[26.9416408796275,-105.80332206060433]];
         var layer_SalinidadGolfodeCalifornia2024_5 = new L.imageOverlay(img_SalinidadGolfodeCalifornia2024_5,
@@ -188,7 +199,7 @@
         bounds_group.addLayer(layer_SalinidadGolfodeCalifornia2024_5);
         map.addLayer(layer_SalinidadGolfodeCalifornia2024_5);
         map.createPane('pane_TemperaturaGolfodeCalifornia2024_6');
-        map.getPane('pane_TemperaturaGolfodeCalifornia2024_6').style.zIndex = 406;
+        map.getPane('pane_TemperaturaGolfodeCalifornia2024_6').style.zIndex = 407;
         var img_TemperaturaGolfodeCalifornia2024_6 = 'data/TemperaturaGolfodeCalifornia2024_6.png';
         var img_bounds_TemperaturaGolfodeCalifornia2024_6 = [[21.785496612300363,-111.43167565491147],[26.9416408796275,-105.80332206060433]];
         var layer_TemperaturaGolfodeCalifornia2024_6 = new L.imageOverlay(img_TemperaturaGolfodeCalifornia2024_6,
@@ -236,7 +247,7 @@
             }
         }
         map.createPane('pane_RutanavegadaGolfodeCalifornia2024_7');
-        map.getPane('pane_RutanavegadaGolfodeCalifornia2024_7').style.zIndex = 407;
+        map.getPane('pane_RutanavegadaGolfodeCalifornia2024_7').style.zIndex = 408;
         map.getPane('pane_RutanavegadaGolfodeCalifornia2024_7').style['mix-blend-mode'] = 'normal';
         var layer_RutanavegadaGolfodeCalifornia2024_7 = new L.geoJson(json_RutanavegadaGolfodeCalifornia2024_7, {
             attribution: '',
@@ -401,7 +412,7 @@
             }
         }
         map.createPane('pane_EnergaAcsticaCostadeSinaloa2024_8');
-        map.getPane('pane_EnergaAcsticaCostadeSinaloa2024_8').style.zIndex = 408;
+        map.getPane('pane_EnergaAcsticaCostadeSinaloa2024_8').style.zIndex = 409;
         map.getPane('pane_EnergaAcsticaCostadeSinaloa2024_8').style['mix-blend-mode'] = 'normal';
         var layer_EnergaAcsticaCostadeSinaloa2024_8 = new L.geoJson(json_EnergaAcsticaCostadeSinaloa2024_8, {
             attribution: '',
@@ -487,7 +498,7 @@
             }
         }
         map.createPane('pane_LancesdepescaGolfodeCalifornia2024_9');
-        map.getPane('pane_LancesdepescaGolfodeCalifornia2024_9').style.zIndex = 409;
+        map.getPane('pane_LancesdepescaGolfodeCalifornia2024_9').style.zIndex = 410;
         map.getPane('pane_LancesdepescaGolfodeCalifornia2024_9').style['mix-blend-mode'] = 'normal';
         var layer_LancesdepescaGolfodeCalifornia2024_9 = new L.geoJson(json_LancesdepescaGolfodeCalifornia2024_9, {
             attribution: '',
@@ -569,7 +580,7 @@
             }
         }
         map.createPane('pane_EstacionesOceanogrficasGolfodeCalifornia2024_10');
-        map.getPane('pane_EstacionesOceanogrficasGolfodeCalifornia2024_10').style.zIndex = 410;
+        map.getPane('pane_EstacionesOceanogrficasGolfodeCalifornia2024_10').style.zIndex = 411;
         map.getPane('pane_EstacionesOceanogrficasGolfodeCalifornia2024_10').style['mix-blend-mode'] = 'normal';
         var layer_EstacionesOceanogrficasGolfodeCalifornia2024_10 = new L.geoJson(json_EstacionesOceanogrficasGolfodeCalifornia2024_10, {
             attribution: '',
@@ -596,7 +607,8 @@
             {label: "Temperatura Golfo de California 2024", layer: layer_TemperaturaGolfodeCalifornia2024_6},
             {label: "Salinidad Golfo de California 2024", layer: layer_SalinidadGolfodeCalifornia2024_5},
             {label: "Oxígeno Golfo de California 2024", layer: layer_OxgenoGolfodeCalifornia2024_4},
-            {label: "Clorofila-a Golfo de California 2024", layer: layer_ClorofilaaGolfodeCalifornia2024_3},
+            {label: "Clorofila-a Golfo de California 2024", layer: layer_ClorofilaaGolfodeCalifornia2024_3}, 
+            {label: "ZMO Golfo de California 2024", layer: layer_JCFINP2404_depth_zmo_splines},
             {label: "ESRI Satellite", layer: layer_ESRISatellite_2},
             {label: "Google.cn Normal", layer: layer_GooglecnNormal_1},
             {label: "OSM Standard", layer: layer_OSMStandard_0},]

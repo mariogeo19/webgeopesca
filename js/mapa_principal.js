@@ -101,7 +101,7 @@ function regiones_marinas_get_link2024(feauture) {
     //if(feauture === "Golfo de México Sur") return '<a href = "#" ><b> Ver Mapa </b>  <i class="fas fa-angle-double-right"></i></a>';
     //if(feauture === "Clipperton Island") return '<a href = "#" target="_blank"> <b> Ver Mapa </b>  <i class="fas fa-angle-double-right"></i></a>';
     if(feauture === "Mar Caribe") return '<a href = "mapweb/2024_caribe/2024_caribe.html" > <b> Ver Mapa </b>  <i class="fas fa-angle-double-right"></i></a>';
-    //if(feauture === "Pacífico Transicional Mexicano") return '<a href = "mapweb/2023_PCS/2023_PCS.html" target="_blank"> <b> Ver Mapa </b>  <i class="fas fa-angle-double-right"></i></a>';
+    if(feauture === "Pacífico Transicional Mexicano") return '<a href = "mapweb/2024_PCS/2024_PCS.html" target="_blank"> <b> Ver Mapa </b>  <i class="fas fa-angle-double-right"></i></a>';
     //if(feauture === "Golfo de México Norte") return '';
     //if(feauture === "Panamá Atlántico") return '';
     //if(feauture === "Panamá Pacífico") return '';

@@ -127,9 +127,20 @@
             maxNativeZoom: 20
         });
         layer_ESRISatellite_2;
+
+        map.createPane('pane_JCFINP2207_08_depth_zmo_kriging');
+        map.getPane('pane_JCFINP2207_08_depth_zmo_kriging').style.zIndex = 403;
+        var img_JCFINP2207_08_depth_zmo_kriging = 'data/JCFINP2207_08_depth_zmo_kriging.png';
+        var img_bounds_JCFINP2207_08_depth_zmo_kriging = [[25.213781380218364,-118.9625390921161],[33.03762174370822,-112.2598124120657]];
+        var layer_JCFINP2207_08_depth_zmo_kriging = new L.imageOverlay(img_JCFINP2207_08_depth_zmo_kriging,
+                                              img_bounds_JCFINP2207_08_depth_zmo_kriging,
+                                              {pane: 'pane_JCFINP2207_08_depth_zmo_kriging'});
+        bounds_group.addLayer(layer_JCFINP2207_08_depth_zmo_kriging);
+        map.addLayer(layer_JCFINP2207_08_depth_zmo_kriging);
+
         map.addLayer(layer_ESRISatellite_2);
         map.createPane('pane_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3');
-        map.getPane('pane_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3').style.zIndex = 403;
+        map.getPane('pane_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3').style.zIndex = 404;
         var img_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3 = 'data/ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3.png';
         var img_bounds_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3 = [[25.5028784970743,-118.30443738972355],[32.71102969476007,-112.502638442909]];
         var layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3 = new L.imageOverlay(img_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3,
@@ -138,7 +149,7 @@
         bounds_group.addLayer(layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3);
         map.addLayer(layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3);
         map.createPane('pane_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4');
-        map.getPane('pane_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4').style.zIndex = 404;
+        map.getPane('pane_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4').style.zIndex = 405;
         var img_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4 = 'data/OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4.png';
         var img_bounds_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4 = [[25.5028784970743,-118.30443738972355],[32.71102969476007,-112.49787114714334]];
         var layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4 = new L.imageOverlay(img_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4,
@@ -147,7 +158,7 @@
         bounds_group.addLayer(layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4);
         map.addLayer(layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4);
         map.createPane('pane_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5');
-        map.getPane('pane_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5').style.zIndex = 405;
+        map.getPane('pane_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5').style.zIndex = 406;
         var img_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5 = 'data/SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5.png';
         var img_bounds_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5 = [[25.5028784970743,-118.30443738972355],[32.71102969476007,-112.502638442909]];
         var layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5 = new L.imageOverlay(img_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5,
@@ -156,7 +167,7 @@
         bounds_group.addLayer(layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5);
         map.addLayer(layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5);
         map.createPane('pane_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6');
-        map.getPane('pane_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6').style.zIndex = 406;
+        map.getPane('pane_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6').style.zIndex = 407;
         var img_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6 = 'data/TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6.png';
         var img_bounds_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6 = [[25.5028784970743,-118.30443738972355],[32.71102969476007,-112.502638442909]];
         var layer_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6 = new L.imageOverlay(img_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6,
@@ -198,7 +209,7 @@
             }
         }
         map.createPane('pane_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7');
-        map.getPane('pane_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7').style.zIndex = 407;
+        map.getPane('pane_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7').style.zIndex = 408;
         map.getPane('pane_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7').style['mix-blend-mode'] = 'normal';
         var layer_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7 = new L.geoJson(json_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7, {
             attribution: '',
@@ -367,7 +378,7 @@
             }
         }
         map.createPane('pane_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8');
-        map.getPane('pane_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8').style.zIndex = 408;
+        map.getPane('pane_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8').style.zIndex = 409;
         map.getPane('pane_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8').style['mix-blend-mode'] = 'normal';
         var layer_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8 = new L.geoJson(json_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8, {
             attribution: '',
@@ -447,7 +458,7 @@
             }
         }
         map.createPane('pane_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9');
-        map.getPane('pane_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9').style.zIndex = 409;
+        map.getPane('pane_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9').style.zIndex = 410;
         map.getPane('pane_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9').style['mix-blend-mode'] = 'normal';
         var layer_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9 = new L.geoJson(json_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9, {
             attribution: '',
@@ -523,7 +534,7 @@
             }
         }
         map.createPane('pane_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10');
-        map.getPane('pane_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10').style.zIndex = 410;
+        map.getPane('pane_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10').style.zIndex = 411;
         map.getPane('pane_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10').style['mix-blend-mode'] = 'normal';
         var layer_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10 = new L.geoJson(json_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10, {
             attribution: '',
@@ -543,7 +554,7 @@
         bounds_group.addLayer(layer_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10);
         map.addLayer(layer_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10.png" /> Estaciones Oceanográficas Costa Occidental Península de Baja California 2022': layer_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10,'<img src="legend/LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9.png" /> Lances de pesca Costa Occidental Penínsunla de Baja California 2022': layer_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9,'Energía Acústica Costa Occidental Península de Baja California 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_12001.png" /></td><td>1 - 200</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_2005002.png" /></td><td>200 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_50020003.png" /></td><td>500 - 2000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_200050004.png" /></td><td>2000 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_5000200005.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_2000035843846.png" /></td><td>20000 - 35843.84</td></tr></table>': layer_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8,'<img src="legend/RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7.png" /> Ruta navegada Costa Occidental Penínsunla de Baja California 2022': layer_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7,"Temperatura Costa Occidental Península de Baja California 2022": layer_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6,"Salinidad Costa Occidental Península de Baja California 2022": layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5,"Oxígeno Costa Occidental Península de Baja California 2022": layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4,"Clorofila-a Costa Occidental Península de Baja California 2022": layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3,"ESRI Satellite": layer_ESRISatellite_2,"Google.cn Normal": layer_GooglecnNormal_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10.png" /> Estaciones Oceanográficas Costa Occidental Península de Baja California 2022': layer_EstacionesOceanogrficasCostaOccidentalPennsuladeBajaCalifornia2022_10,'<img src="legend/LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9.png" /> Lances de pesca Costa Occidental Penínsunla de Baja California 2022': layer_LancesdepescaCostaOccidentalPennsunladeBajaCalifornia2022_9,'Energía Acústica Costa Occidental Península de Baja California 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_12001.png" /></td><td>1 - 200</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_2005002.png" /></td><td>200 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_50020003.png" /></td><td>500 - 2000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_200050004.png" /></td><td>2000 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_5000200005.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8_2000035843846.png" /></td><td>20000 - 35843.84</td></tr></table>': layer_EnergaAcsticaCostaOccidentalPennsuladeBajaCalifornia2022_8,'<img src="legend/RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7.png" /> Ruta navegada Costa Occidental Penínsunla de Baja California 2022': layer_RutanavegadaCostaOccidentalPennsunladeBajaCalifornia2022_7,"Temperatura Costa Occidental Península de Baja California 2022": layer_TemperaturaCostaOccidentalPennsuladeBajaCalifornia2022_6,"Salinidad Costa Occidental Península de Baja California 2022": layer_SalinidadCostaOccidentalPennsuladeBajaCalifornia2022_5,"Oxígeno Costa Occidental Península de Baja California 2022": layer_OxgenoCostaOccidentalPennsuladeBajaCalifornia2022_4,"Clorofila-a Costa Occidental Península de Baja California 2022": layer_ClorofilaaCostaOccidentalPennsuladeBajaCalifornia2022_3, "ZMO Costa Occidental Península de Baja California 2022": layer_JCFINP2207_08_depth_zmo_kriging,"ESRI Satellite": layer_ESRISatellite_2,"Google.cn Normal": layer_GooglecnNormal_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
         setBounds();
         L.ImageOverlay.include({
             getBounds: function () {

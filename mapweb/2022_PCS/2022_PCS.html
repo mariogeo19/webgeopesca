@@ -24,7 +24,7 @@
                  margin: 0;
              }
              </style>
-             <title>Costa Occidental PBC</title>
+             <title>Golfo de Tehuantepec</title>
          </head>
          <body>
              <div class="navegacion">
@@ -128,8 +128,19 @@
         });
         layer_ESRISatellite_2;
         map.addLayer(layer_ESRISatellite_2);
+
+        map.createPane('pane_JCFINP2204_depth_zmo_idw');
+        map.getPane('pane_JCFINP2204_depth_zmo_idw').style.zIndex = 403;
+        var img_JCFINP2204_depth_zmo_idw = 'data/JCFINP2204_depth_zmo_idw.png';
+        var img_bounds_JCFINP2204_depth_zmo_idw = [[13.786752071760464,-98.72293298675389],[16.279005679304202,-92.2965119469692]];
+        var layer_JCFINP2204_depth_zmo_idw = new L.imageOverlay(img_JCFINP2204_depth_zmo_idw,
+                                              img_bounds_JCFINP2204_depth_zmo_idw,
+                                              {pane: 'pane_JCFINP2204_depth_zmo_idw'});
+        bounds_group.addLayer(layer_JCFINP2204_depth_zmo_idw);
+        map.addLayer(layer_JCFINP2204_depth_zmo_idw);
+
         map.createPane('pane_ClorofilaaPacficoCentroSur2022_3');
-        map.getPane('pane_ClorofilaaPacficoCentroSur2022_3').style.zIndex = 403;
+        map.getPane('pane_ClorofilaaPacficoCentroSur2022_3').style.zIndex = 404;
         var img_ClorofilaaPacficoCentroSur2022_3 = 'data/ClorofilaaPacficoCentroSur2022_3.png';
         var img_bounds_ClorofilaaPacficoCentroSur2022_3 = [[13.78159579685574,-98.72763624846492],[16.280231408148424,-92.29309675389703]];
         var layer_ClorofilaaPacficoCentroSur2022_3 = new L.imageOverlay(img_ClorofilaaPacficoCentroSur2022_3,
@@ -138,7 +149,7 @@
         bounds_group.addLayer(layer_ClorofilaaPacficoCentroSur2022_3);
         map.addLayer(layer_ClorofilaaPacficoCentroSur2022_3);
         map.createPane('pane_OxgenoPacficoCentroSur2022_4');
-        map.getPane('pane_OxgenoPacficoCentroSur2022_4').style.zIndex = 404;
+        map.getPane('pane_OxgenoPacficoCentroSur2022_4').style.zIndex = 405;
         var img_OxgenoPacficoCentroSur2022_4 = 'data/OxgenoPacficoCentroSur2022_4.png';
         var img_bounds_OxgenoPacficoCentroSur2022_4 = [[13.783407709659487,-98.72759433407154],[16.280231408148424,-92.29666097043582]];
         var layer_OxgenoPacficoCentroSur2022_4 = new L.imageOverlay(img_OxgenoPacficoCentroSur2022_4,
@@ -147,7 +158,7 @@
         bounds_group.addLayer(layer_OxgenoPacficoCentroSur2022_4);
         map.addLayer(layer_OxgenoPacficoCentroSur2022_4);
         map.createPane('pane_SalinidadPacficoCentroSur2022_5');
-        map.getPane('pane_SalinidadPacficoCentroSur2022_5').style.zIndex = 405;
+        map.getPane('pane_SalinidadPacficoCentroSur2022_5').style.zIndex = 406;
         var img_SalinidadPacficoCentroSur2022_5 = 'data/SalinidadPacficoCentroSur2022_5.png';
         var img_bounds_SalinidadPacficoCentroSur2022_5 = [[13.78159579685574,-98.72763624846492],[16.280231408148424,-92.29309675389703]];
         var layer_SalinidadPacficoCentroSur2022_5 = new L.imageOverlay(img_SalinidadPacficoCentroSur2022_5,
@@ -156,7 +167,7 @@
         bounds_group.addLayer(layer_SalinidadPacficoCentroSur2022_5);
         map.addLayer(layer_SalinidadPacficoCentroSur2022_5);
         map.createPane('pane_TemperaturaPacficoCentroSur2022_6');
-        map.getPane('pane_TemperaturaPacficoCentroSur2022_6').style.zIndex = 406;
+        map.getPane('pane_TemperaturaPacficoCentroSur2022_6').style.zIndex = 407;
         var img_TemperaturaPacficoCentroSur2022_6 = 'data/TemperaturaPacficoCentroSur2022_6.png';
         var img_bounds_TemperaturaPacficoCentroSur2022_6 = [[13.78159579685574,-98.72763624846492],[16.280231408148424,-92.29309675389703]];
         var layer_TemperaturaPacficoCentroSur2022_6 = new L.imageOverlay(img_TemperaturaPacficoCentroSur2022_6,
@@ -201,7 +212,7 @@
             }
         }
         map.createPane('pane_RutanavegadaPacficoCentroSur2022_7');
-        map.getPane('pane_RutanavegadaPacficoCentroSur2022_7').style.zIndex = 407;
+        map.getPane('pane_RutanavegadaPacficoCentroSur2022_7').style.zIndex = 408;
         map.getPane('pane_RutanavegadaPacficoCentroSur2022_7').style['mix-blend-mode'] = 'normal';
         var layer_RutanavegadaPacficoCentroSur2022_7 = new L.geoJson(json_RutanavegadaPacficoCentroSur2022_7, {
             attribution: '',
@@ -376,7 +387,7 @@
             }
         }
         map.createPane('pane_EnergaAcsticaPacficoCentroSur2022_8');
-        map.getPane('pane_EnergaAcsticaPacficoCentroSur2022_8').style.zIndex = 408;
+        map.getPane('pane_EnergaAcsticaPacficoCentroSur2022_8').style.zIndex = 409;
         map.getPane('pane_EnergaAcsticaPacficoCentroSur2022_8').style['mix-blend-mode'] = 'normal';
         var layer_EnergaAcsticaPacficoCentroSur2022_8 = new L.geoJson(json_EnergaAcsticaPacficoCentroSur2022_8, {
             attribution: '',
@@ -456,7 +467,7 @@
             }
         }
         map.createPane('pane_LancesdepescaPacficoCentroSur2022_9');
-        map.getPane('pane_LancesdepescaPacficoCentroSur2022_9').style.zIndex = 409;
+        map.getPane('pane_LancesdepescaPacficoCentroSur2022_9').style.zIndex = 410;
         map.getPane('pane_LancesdepescaPacficoCentroSur2022_9').style['mix-blend-mode'] = 'normal';
         var layer_LancesdepescaPacficoCentroSur2022_9 = new L.geoJson(json_LancesdepescaPacficoCentroSur2022_9, {
             attribution: '',
@@ -532,7 +543,7 @@
             }
         }
         map.createPane('pane_EstacionesOceanogrficasPacficoCentroSur2022_10');
-        map.getPane('pane_EstacionesOceanogrficasPacficoCentroSur2022_10').style.zIndex = 410;
+        map.getPane('pane_EstacionesOceanogrficasPacficoCentroSur2022_10').style.zIndex = 411;
         map.getPane('pane_EstacionesOceanogrficasPacficoCentroSur2022_10').style['mix-blend-mode'] = 'normal';
         var layer_EstacionesOceanogrficasPacficoCentroSur2022_10 = new L.geoJson(json_EstacionesOceanogrficasPacficoCentroSur2022_10, {
             attribution: '',
@@ -552,7 +563,7 @@
         bounds_group.addLayer(layer_EstacionesOceanogrficasPacficoCentroSur2022_10);
         map.addLayer(layer_EstacionesOceanogrficasPacficoCentroSur2022_10);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/EstacionesOceanogrficasPacficoCentroSur2022_10.png" /> Estaciones Oceanográficas Pacífico Centro-Sur 2022': layer_EstacionesOceanogrficasPacficoCentroSur2022_10,'<img src="legend/LancesdepescaPacficoCentroSur2022_9.png" /> Lances de pesca Pacífico Centro-Sur 2022': layer_LancesdepescaPacficoCentroSur2022_9,'Energía Acústica Pacífico Centro-Sur 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_12001.png" /></td><td>1 - 200</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_2005002.png" /></td><td>200 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_50020003.png" /></td><td>500 - 2000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_200050004.png" /></td><td>2000 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_5000200005.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_2000042102616.png" /></td><td>20000 - 42102.61</td></tr></table>': layer_EnergaAcsticaPacficoCentroSur2022_8,'<img src="legend/RutanavegadaPacficoCentroSur2022_7.png" /> Ruta navegada Pacífico Centro-Sur 2022': layer_RutanavegadaPacficoCentroSur2022_7,"Temperatura Pacífico Centro-Sur 2022": layer_TemperaturaPacficoCentroSur2022_6,"Salinidad Pacífico Centro-Sur 2022": layer_SalinidadPacficoCentroSur2022_5,"Oxígeno Pacífico Centro-Sur 2022": layer_OxgenoPacficoCentroSur2022_4,"Clorofila-a Pacífico Centro-Sur 2022": layer_ClorofilaaPacficoCentroSur2022_3,"ESRI Satellite": layer_ESRISatellite_2,"Google.cn Normal": layer_GooglecnNormal_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/EstacionesOceanogrficasPacficoCentroSur2022_10.png" /> Estaciones Oceanográficas Pacífico Centro-Sur 2022': layer_EstacionesOceanogrficasPacficoCentroSur2022_10,'<img src="legend/LancesdepescaPacficoCentroSur2022_9.png" /> Lances de pesca Pacífico Centro-Sur 2022': layer_LancesdepescaPacficoCentroSur2022_9,'Energía Acústica Pacífico Centro-Sur 2022<br /><table><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_12001.png" /></td><td>1 - 200</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_2005002.png" /></td><td>200 - 500</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_50020003.png" /></td><td>500 - 2000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_200050004.png" /></td><td>2000 - 5000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_5000200005.png" /></td><td>5000 - 20000</td></tr><tr><td style="text-align: center;"><img src="legend/EnergaAcsticaPacficoCentroSur2022_8_2000042102616.png" /></td><td>20000 - 42102.61</td></tr></table>': layer_EnergaAcsticaPacficoCentroSur2022_8,'<img src="legend/RutanavegadaPacficoCentroSur2022_7.png" /> Ruta navegada Pacífico Centro-Sur 2022': layer_RutanavegadaPacficoCentroSur2022_7,"Temperatura Pacífico Centro-Sur 2022": layer_TemperaturaPacficoCentroSur2022_6,"Salinidad Pacífico Centro-Sur 2022": layer_SalinidadPacficoCentroSur2022_5,"Oxígeno Pacífico Centro-Sur 2022": layer_OxgenoPacficoCentroSur2022_4,"Clorofila-a Pacífico Centro-Sur 2022": layer_ClorofilaaPacficoCentroSur2022_3,"ZMO Pacífico Centro-Sur 2022": layer_JCFINP2204_depth_zmo_idw,"ESRI Satellite": layer_ESRISatellite_2,"Google.cn Normal": layer_GooglecnNormal_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
         setBounds();
         L.ImageOverlay.include({
             getBounds: function () {
